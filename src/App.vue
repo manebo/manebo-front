@@ -1,31 +1,37 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-toolbar app>
+      <v-toolbar-title class="headline text-uppercase">
+        <span>Manebo</span>
+        <span class="font-weight-light">FRONT TEST</span>
+      </v-toolbar-title>
+
+      <!-- fill space -->
+      <v-spacer></v-spacer>
+
+      <!-- menu link buttons -->
+      <v-btn icon to="/">
+        <v-icon>home</v-icon>
+      </v-btn>
+      <v-btn icon to="login">
+        <v-icon>exit_to_app</v-icon>
+      </v-btn>
+    </v-toolbar>
+
+    <v-content>
+      <router-view></router-view>
+    </v-content>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
+<script>
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+export default {
+  name: 'App',
+  data () {
+    return {
+      //
+    }
+  }
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+</script>
