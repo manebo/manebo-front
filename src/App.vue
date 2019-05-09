@@ -11,10 +11,10 @@
 
       <!-- menu link buttons -->
       <v-btn icon to="/">
-        <v-icon>home</v-icon>
+        <v-icon>fa-home</v-icon>
       </v-btn>
       <v-btn icon to="login">
-        <v-icon>exit_to_app</v-icon>
+        <v-icon>fas fa-sign-in-alt</v-icon>
       </v-btn>
     </v-toolbar>
 
