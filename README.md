@@ -25,5 +25,14 @@ npm run test
 npm run lint
 ```
 
+### Used features
+- History mode: enabled
+- npm
+- Babel + TypeScript
+- Vue-router
+- Vuex
+- Linter (ESLint standard)
+- configs in package.json
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
