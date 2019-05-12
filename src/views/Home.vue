@@ -20,5 +20,10 @@ import TaskCol from '@/components/TaskCol.vue' // @ is an alias to /src
     TaskCol
   }
 })
-export default class Home extends Vue {}
+
+export default class Home extends Vue {
+  public beforeCreate () {
+    this.$store.dispatch('getTasksAction')
+  }
+}
 </script>
