@@ -4,9 +4,6 @@
       <v-flex xs4>
         <task-col></task-col>
       </v-flex>
-      <v-flex xs4>
-        <task-col></task-col>
-      </v-flex>
     </v-layout>
   </v-container>
 </template>
@@ -21,9 +18,5 @@ import TaskCol from '@/components/TaskCol.vue' // @ is an alias to /src
   }
 })
 
-export default class Home extends Vue {
-  public beforeCreate () {
-    this.$store.dispatch('getTasksAction')
-  }
-}
+export default class Home extends Vue {}
 </script>
